@@ -4,6 +4,8 @@
 
 Deploy `tripathy-loop` as a standalone Vercel project. Production is sourced only from `main`; pull requests receive Preview deployments. The dashboard begins as a static view and can later ingest signed GitHub, Linear and Slack events through server-only routes.
 
+Current project: [Vercel dashboard](https://vercel.com/shubhankars-projects-4a7ed13d/tripathy-loop). Current public deployment: [rushing-redwood-boh9t81.tmp.now](https://rushing-redwood-boh9t81.tmp.now/).
+
 Bootstrap order:
 
 1. Install and authenticate the official Vercel CLI or use the Vercel dashboard.

@@ -49,7 +49,14 @@ export default async function ExperimentPage({ params }: { params: Promise<{ slu
         <p className="eyebrow">INTEGRATION MAP</p>
         <div className="integrations">
           {integrations.map(([name, value]) => (
-            <div key={name}><span>{name}</span><code>{value}</code></div>
+            <div key={name}>
+              <span>{name}</span>
+              {value.startsWith("https://") ? (
+                <a href={value} rel="noreferrer" target="_blank"><code>{value}</code></a>
+              ) : (
+                <code>{value}</code>
+              )}
+            </div>
           ))}
         </div>
       </section>

@@ -10,12 +10,16 @@ Claude Code -> GitHub -> Linear -> Slack -> Claude Code
 
 The repository owns the portfolio dashboard, reusable experiment contract, engineering rules, integration runbooks and verification tooling. It deliberately contains no idea-specific implementation and no credentials.
 
+Live control dashboard: [rushing-redwood-boh9t81.tmp.now](https://rushing-redwood-boh9t81.tmp.now/)
+
+Portfolio Slack channel: [#tripathy-loop](https://app.slack.com/client/T0CHM33JRDH/C0CHNFTFY5B)
+
 ## Repositories
 
 - `tripathy-loop`: control plane and reusable contract.
 - `tripathy-experiment-01` through `tripathy-experiment-06`: isolated experiment lanes awaiting idea assignment.
 
-Each experiment has its own GitHub repository, Linear project, Slack channel, Claude session, CI history, evidence bundle and deployment boundary.
+Each experiment has its own GitHub repository, Linear project, Slack channel, Claude session, CI history, evidence bundle and deployment boundary. The live URLs are tracked in `lib/experiments.ts` and each lane's `project.yaml`.
 
 ## Local setup
 

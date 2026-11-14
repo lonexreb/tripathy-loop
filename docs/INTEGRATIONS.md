@@ -6,12 +6,14 @@ Connect each experiment repository to its matching Linear project. Branch and pu
 
 ## Linear to Slack
 
-Create:
+Provisioned:
 
 - `#tripathy-loop` for portfolio decisions, blockers and daily summaries;
 - `#tripathy-exp-01` through `#tripathy-exp-06` for detailed lane updates.
 
-Configure each Linear project to post new issues, comments, status changes, project updates and completion events to only its corresponding experiment channel. The umbrella project routes to `#tripathy-loop`.
+Each Linear project contains its matching Slack channel as a resource. Enable the incoming webhook for each project so that new issues, comments, status changes, project updates and completion events post only to the corresponding experiment channel. The umbrella project routes to `#tripathy-loop`.
+
+The webhook grant is channel-scoped and must be approved in Slack. Treat that grant as production access: confirm the target channel before approving and never route one lane into another lane's channel.
 
 ## GitHub to Slack
 
