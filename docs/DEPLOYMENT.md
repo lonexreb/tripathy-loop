@@ -19,7 +19,7 @@ No database is required for the baseline. Add a managed integration only if live
 
 ## Experiment compute on Modal
 
-Each experiment uses its own Modal app name: `tripathy-experiment-01` through `tripathy-experiment-06`. Keep functions small and explicit:
+Each experiment uses its own Modal app name. E01 is `tripathy-loop-e01-t02-kalshi`; the unassigned lanes remain `tripathy-experiment-02` through `tripathy-experiment-06`. Keep functions small and explicit:
 
 - `smoke`: validates image, secrets and imports;
 - `run_experiment`: executes one manifest-defined run;

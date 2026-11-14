@@ -9,7 +9,8 @@ Connect each experiment repository to its matching Linear project. Branch and pu
 Provisioned:
 
 - `#tripathy-loop` for portfolio decisions, blockers and daily summaries;
-- `#tripathy-exp-01` through `#tripathy-exp-06` for detailed lane updates.
+- `#tl-e01-t02-kalshi` for the assigned E01 lane;
+- `#tripathy-exp-02` through `#tripathy-exp-06` for the unassigned lanes.
 
 Each Linear project contains its matching Slack channel as a resource. Enable the incoming webhook for each project so that new issues, comments, status changes, project updates and completion events post only to the corresponding experiment channel. The umbrella project routes to `#tripathy-loop`.
 

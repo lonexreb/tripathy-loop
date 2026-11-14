@@ -17,7 +17,10 @@ Portfolio Slack channel: [#tripathy-loop](https://app.slack.com/client/T0CHM33JR
 ## Repositories
 
 - `tripathy-loop`: control plane and reusable contract.
-- `tripathy-experiment-01` through `tripathy-experiment-06`: isolated experiment lanes awaiting idea assignment.
+- `tripathy-loop-e01-t02-kalshi`: E01, provisionally assigned to Track 02.
+- `tripathy-experiment-02` through `tripathy-experiment-06`: isolated experiment lanes awaiting idea assignment.
+
+The unassigned generic lane list now begins at `tripathy-experiment-02`; the old Experiment 01 repository URL redirects to its Track 02 name.
 
 Each experiment has its own GitHub repository, Linear project, Slack channel, Claude session, CI history, evidence bundle and deployment boundary. The live URLs are tracked in `lib/experiments.ts` and each lane's `project.yaml`.
 

@@ -1,7 +1,7 @@
 import type { Experiment } from "./types";
 
 const linearProjects = [
-  "https://linear.app/tripathy/project/tripathy-experiment-01-awaiting-idea-4a9aac262fa8/overview",
+  "https://linear.app/tripathy/project/tripathy-loop-e01-track-02-kalshi-gpu-forecaster-4a9aac262fa8/overview",
   "https://linear.app/tripathy/project/tripathy-experiment-02-awaiting-idea-0b6a8f9d9d84/overview",
   "https://linear.app/tripathy/project/tripathy-experiment-03-awaiting-idea-5dbfdacd8c3f/overview",
   "https://linear.app/tripathy/project/tripathy-experiment-04-awaiting-idea-44e64cd15456/overview",
@@ -21,15 +21,20 @@ const slackChannels = [
 export const experiments: Experiment[] = Array.from({ length: 6 }, (_, index) => {
   const id = index + 1;
   const padded = String(id).padStart(2, "0");
+  const isKalshiTrack = id === 1;
 
   return {
     id,
     slug: `experiment-${padded}`,
-    title: `Experiment ${padded}`,
-    status: "awaiting-idea",
-    hypothesis: "Idea assignment pending",
+    title: isKalshiTrack ? "E01 · Track 02: Kalshi GPU Forecaster" : `Experiment ${padded}`,
+    status: isKalshiTrack ? "planning" : "awaiting-idea",
+    hypothesis: isKalshiTrack
+      ? "Provisional: can a time-causal self-improvement loop beat matched Kalshi probabilities?"
+      : "Idea assignment pending",
     owner: `Claude session ${padded}`,
-    github: `https://github.com/lonexreb/tripathy-experiment-${padded}`,
+    github: isKalshiTrack
+      ? "https://github.com/lonexreb/tripathy-loop-e01-t02-kalshi"
+      : `https://github.com/lonexreb/tripathy-experiment-${padded}`,
     linear: linearProjects[index],
     slack: slackChannels[index],
     vercel: "not-linked",
@@ -38,7 +43,11 @@ export const experiments: Experiment[] = Array.from({ length: 6 }, (_, index) =>
     costUsd: 0,
     latencySeconds: null,
     runs: 0,
-    lastUpdate: "GitHub, Linear, and Slack lane provisioned",
-    nextDecision: "Assign idea and define success metric",
+    lastUpdate: isKalshiTrack
+      ? "Track assigned; independent design reviews pending"
+      : "GitHub, Linear, and Slack lane provisioned",
+    nextDecision: isKalshiTrack
+      ? "Resolve data feasibility and approve or kill the provisional start gate"
+      : "Assign idea and define success metric",
   };
 });
