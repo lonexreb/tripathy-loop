@@ -20,7 +20,7 @@ GitHub and Linear are systems of record. Slack is never the only location for a 
 |---|---|---|
 | GitHub | `tripathy-loop` | `tripathy-loop-e01-t02-kalshi`, `tripathy-experiment-02..06` |
 | Linear | SF AI Research Hackathon plan | One project with milestones and issues |
-| Slack | `#tripathy-loop` | `#tl-e01-t02-kalshi`, `#tripathy-exp-02..06` |
+| Slack | `#tripathy-loop` | E01: `#tripathy-exp-01` (target `#tl-e01-t02-kalshi`), then `#tripathy-exp-02..06` |
 | Claude | Portfolio coordinator | One isolated session with bounded subagents |
 | Vercel | Dashboard | Optional idea-specific web surface |
 | Modal | Shared provider account | Separate app, secrets and run namespace |
