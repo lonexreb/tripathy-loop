@@ -1,0 +1,16 @@
+schema_version: 1
+experiment_id: __LANE__
+name: __TITLE__
+status: awaiting-idea
+owner: Claude session __LANE__
+systems:
+  github: https://github.com/lonexreb/__REPO__
+  linear_project: pending
+  slack_channel: "#__SLACK__"
+  vercel_project: not-linked
+  modal_app: __REPO__
+controls:
+  primary_branch: main
+  protected_artifacts: true
+  secrets_in_repo: forbidden
+  human_readability_required: true
